@@ -1,25 +1,86 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Great_Armenia</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Great_Armenia</div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Great Armenia by Aram Mkhoyan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap" rel="stylesheet">	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body >		
+			<!-- Header -->
+				<div id="header">					
+							<header>
+								<h1><aid="logo">Great Armenia</a></h1>
+								<hr />								
+							</header>
+							<footer>
+								<a href="#banner" class="button circled scrolly">Սկսի´ր խաղալ և սովորել</a>
+							</footer>
+						
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#">Aram Mkhoyan</a></li>
+								<li>
+									<a href="#">Sirous Game</a>
+									<ul>										
+										<li><a >Great Armenia</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</nav>
+				</div>
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>Ողջույն 👋🏼</h2>
+						<p>
+              Սիրու՞մ ես խաղեր խաղալ, բայց միևնույն ժամանակ հետաքրքված ես պատմութամբ ու ցանկանում ես գիտելիքներդ այդ ոլորտում ընդլայնել, ապա այս հարթակը հենց քե´զ համար է: <p class="centertext">Խաղա´ և սովորի´ր պատմական Հայաստանի 16 նահանգները:<p class="centertext"> Այլևս ընտրություն անելու կարիք չկա:</p>
+						</p>
+					</header>
+				</section>
+			<!-- Game -->
+      <div class="webgl-content">
+        <div id="unityContainer"></div>        
       </div>
-    </div>
-  </body>
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">		
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">			
+										<ul class="icons">
+											<li><a href="https://twitter.com/Armenia" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/travel.to.armenia/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://www.instagram.com/armenia/"  target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										</ul>
+									</section>
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											
+										</ul>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- Scripts -->
+      <script src="TemplateData/UnityProgress.js"></script>
+      <script src="Build/UnityLoader.js"></script>
+      <script> var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});</script>	
+	</body>
 </html>
